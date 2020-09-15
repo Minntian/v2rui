@@ -17,7 +17,7 @@ spec:
         - name: v2rui
           image: hongchenvpn/v2rui
           ports:
-            - containerPort: 8251
+            - containerPort: 8080
             
 ---
 apiVersion: v1
@@ -30,6 +30,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "v2rui"
-    port: 8251
+    port: 8080
   selector:
     name: v2rui
