@@ -44,4 +44,4 @@ jobs:
           #Namespace用户名
     #      cd /home/runner/work/okteto-reboot/okteto-reboot          
           # push y
-   #       echo y | okteto push
+   #       echo y | okteto push 
