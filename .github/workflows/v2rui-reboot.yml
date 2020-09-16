@@ -27,7 +27,7 @@ jobs:
           sudo apt-get -y install curl
       - name: Clone source
         run: |
-          cd /home/runner
+          cd /home/runner/work/v2rui/v2rui
           pwd
           ls
           cd /home/runner/work          
