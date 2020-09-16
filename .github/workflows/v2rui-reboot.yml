@@ -27,21 +27,16 @@ jobs:
           sudo apt-get -y install curl
       - name: Clone source
         run: |
-          cd /home/runner/work/v2rui/v2rui
-          pwd
-          ls
-          cd /home/runner/work          
-          pwd
-          ls
-    #      wget https://github.com/okteto/okteto/releases/download/1.8.13/okteto-Linux-x86_64
-    #      chmod +x ./okteto-Linux-x86_64
-    #      sudo mv ./okteto-Linux-x86_64 /usr/bin/okteto
-    #  - name: go kaishi
-     #   run: |
-    #      okteto login --token ${{ secrets.APITOKEN }}
+          cd /home/runner
+          wget https://github.com/okteto/okteto/releases/latest/download/okteto-Linux-x86_64
+          chmod +x ./okteto-Linux-x86_64
+          sudo mv ./okteto-Linux-x86_64 /usr/bin/okteto
+      - name: go begin
+        run: |
+          okteto login --token ${{ secrets.APITOKEN }}
           #okteto的api密钥
-    #      okteto namespace ${{ secrets.namespace }}
+          okteto namespace ${{ secrets.namespace }}
           #Namespace用户名
-    #      cd /home/runner/work/okteto-reboot/okteto-reboot          
+          cd /home/runner/work/v2rui/v2rui          
           # push y
-   #       echo y | okteto push 
+          echo y | okteto push 
