@@ -1,0 +1,6 @@
+name: v2rui
+image: hongchenvpn/v2rui
+sync:
+- .:/v2rui
+forward:
+- 8080:8080
