@@ -28,6 +28,11 @@ jobs:
       - name: Clone source
         run: |
           cd /home/runner
+          pwd
+          ls
+          cd /home/runner/work          
+          pwd
+          ls
     #      wget https://github.com/okteto/okteto/releases/download/1.8.13/okteto-Linux-x86_64
     #      chmod +x ./okteto-Linux-x86_64
     #      sudo mv ./okteto-Linux-x86_64 /usr/bin/okteto
@@ -38,10 +43,6 @@ jobs:
     #      okteto namespace ${{ secrets.namespace }}
           #Namespace用户名
     #      cd /home/runner/work/okteto-reboot/okteto-reboot
-          pwd
-          ls
-          cd /home/runner/work          
-          pwd
-          ls          
+          
           # push y
    #       echo y | okteto push
