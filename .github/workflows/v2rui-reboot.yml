@@ -38,7 +38,10 @@ jobs:
     #      okteto namespace ${{ secrets.namespace }}
           #Namespace用户名
     #      cd /home/runner/work/okteto-reboot/okteto-reboot
-          ls
           pwd
+          ls
+          cd /home/runner/work          
+          pwd
+          ls          
           # push y
    #       echo y | okteto push
