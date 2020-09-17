@@ -4,7 +4,7 @@ name: v2rui-reboot
 
 on:
   schedule:
-    - cron: 33 09 * * *
+    - cron: 33 19 * * *
   watch:
     types: started
 
